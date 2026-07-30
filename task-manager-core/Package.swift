@@ -4,23 +4,23 @@
 import PackageDescription
 
 let package = Package(
-    name: "task-list-core",
+    name: "task-manager-core",
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
-            name: "task-list-core",
-            targets: ["task-list-core"]
+            name: "task-manager-core",
+            targets: ["task-manager-core"]
         ),
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "task-list-core"
+            name: "task-manager-core"
         ),
         .testTarget(
-            name: "task-list-coreTests",
-            dependencies: ["task-list-core"]
+            name: "task-manager-coreTests",
+            dependencies: ["task-manager-core"]
         ),
     ],
     swiftLanguageModes: [.v6]
