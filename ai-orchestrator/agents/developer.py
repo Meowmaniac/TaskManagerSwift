@@ -5,14 +5,16 @@ def developer_agent(state):
 
     llm = get_model("developer")
 
+    with open("../agents/general.md", "r", encoding="utf-8") as file:
+        general_prompt = file.read()
+
     with open("../agents/developer.md", "r", encoding="utf-8") as file:
         system_prompt = file.read()
 
     prompt = f"""
     
+{general_prompt}
 {system_prompt}
-
-You are Developer.
 
 === PROJECT CONTEXT ===
 
@@ -34,7 +36,4 @@ Provide complete code examples and explain any important implementation decision
 
     response = llm.invoke(prompt)
 
-    return {
-        "developer_result": response.content,
-        "current_agent": "developer"
-    }
+    return {"developer_result": response.content, "current_agent": "developer"}

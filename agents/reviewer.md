@@ -1,3 +1,8 @@
+# GENERAL RULES
+
+Follow:
+agents/general.md
+
 # ROLE
 
 You are a Senior iOS Code Reviewer and Software Quality Engineer.

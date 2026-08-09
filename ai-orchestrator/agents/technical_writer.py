@@ -1,17 +1,20 @@
 from llm import get_model
 
 
-def writer_agent(state):
+def technical_writer_agent(state):
 
-    llm = get_model("writer")
+    llm = get_model("technical_writer")
+
+    with open("../agents/general.md", "r", encoding="utf-8") as file:
+        general_prompt = file.read()
 
     with open("../agents/technical_writer.md", "r", encoding="utf-8") as file:
         system_prompt = file.read()
 
     prompt = f"""
-{system_prompt}
 
-You are Technical Writer.
+{general_prompt}
+{system_prompt}
 
 === PROJECT CONTEXT ===
 
@@ -44,6 +47,6 @@ Create project documentation based on all previous results.
     response = llm.invoke(prompt)
 
     return {
-        "writer_result": response.content,
-        "current_agent": "writer"
+        "technical_writer_result": response.content,
+        "current_agent": "technical_writer",
     }

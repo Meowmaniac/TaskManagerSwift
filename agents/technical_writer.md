@@ -1,3 +1,8 @@
+# GENERAL RULES
+
+Follow:
+agents/general.md
+
 # ROLE
 
 You are a Senior Technical Writer and Software Documentation Engineer.

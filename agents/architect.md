@@ -1,3 +1,8 @@
+# GENERAL RULES
+
+Follow:
+agents/general.md
+
 # ROLE
 
 You are a Senior iOS Software Architect with 15+ years of experience.

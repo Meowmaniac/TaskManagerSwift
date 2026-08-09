@@ -12,6 +12,6 @@ class AgentState(TypedDict):
     architect_result: str
     developer_result: str
     reviewer_result: str
-    writer_result: str
+    technical_writer_result: str
 
     current_agent: str
