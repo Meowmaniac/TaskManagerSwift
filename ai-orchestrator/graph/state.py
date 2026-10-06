@@ -7,6 +7,7 @@ class AgentState(TypedDict):
 
     project_context: str
     roadmap: str
+    changed_files: list[str]
 
     teacher_result: str
     architect_result: str

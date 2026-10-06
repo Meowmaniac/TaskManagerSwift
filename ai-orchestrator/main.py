@@ -2,7 +2,8 @@ from agents.teacher import teacher_agent
 from agents.architect import architect_agent
 from agents.developer import developer_agent
 from agents.reviewer import reviewer_agent
-from agents.technical_writer import technical_writer_agent
+
+# from agents.technical_writer import technical_writer_agent
 
 # Load project context and roadmap from files
 with open("context/project_context.md", "r", encoding="utf-8") as file:
@@ -16,7 +17,7 @@ agents = [
     ("architect", architect_agent),
     ("developer", developer_agent),
     ("reviewer", reviewer_agent),
-    ("technical_writer", technical_writer_agent),
+    # ("technical_writer", technical_writer_agent),
 ]
 
 print("=" * 60)

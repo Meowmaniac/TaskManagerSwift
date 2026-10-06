@@ -32,3 +32,9 @@ outputs/
 
 # Notes
 notes.txt
+
+# Local agents tests
+test_developer.py
+test_filesystem.py
+test_reviewer.py
+test_teacher.py
