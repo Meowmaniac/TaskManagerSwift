@@ -47,20 +47,38 @@ Avoid overengineering.
 # Repository Structure
 
 ios-learning/
-
+│
 ├── handbook/
-│
 ├── prompts/
-│
 ├── agents/
-│
 ├── examples/
-│
 ├── scripts/
 │
 ├── task-manager-core/
+│   ├── Sources/
+│   │   └── TaskManagerCore/
+│   │       ├── Domain/
+│   │       │   ├── Models/
+│   │       │   ├── Repositories/
+│   │       │   └── UseCases/
+│   │       │
+│   │       ├── Data/
+│   │       │   └── Repositories/
+│   │       │
+│   │       └── Shared/
+│   │
+│   └── Tests/
+│       └── TaskManagerCoreTests/
 │
 └── task-manager-ios/
+    ├── App/
+    ├── Features/
+    │   └── Tasks/
+    │       ├── Views/
+    │       └── ViewModels/
+    │
+    ├── Navigation/
+    └── Shared/
 
 ---
 
